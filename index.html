@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="small-image-side">
+            <img src="./images/img-5.jpg" onclick="showImage(this)" alt="" srcset="">
+            <img src="./images/img-4.jpg" onclick="showImage(this)" alt="" srcset="">
+            <img src="./images/img-3.jpg" onclick="showImage(this)" alt="" srcset="">
+            <img src="./images/img-2.jpg" onclick="showImage(this)" alt="" srcset="">
+            <img src="./images/img-main.png" onclick="showImage(this)" alt="" srcset="">
+        </div>
+        <div class="main-img-container">
+            <img  id="img-box"src="./images/img-main.png"  alt="" srcset="">
+        </div>
+
+        <div class="product-detail">
+            <h3>Iphone 12</h3>
+            <h4>Product details of iPhone 12 64GB</h4>
+            <p>6.1-inch (15.5 cm diagonal) Super Retina XDR display
+                Ceramic Shield, tougher than any smartphone glass
+                A14 Bionic chip, the fastest chip ever in a smartphone
+                Advanced dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Deep Fusion, Smart HDR 3, 4K Dolby Vision HDR recording</p>
+            <span class="price"><b>$789</b></span>
+            <button>Buy now</button> <button>Whishlist</button>
+        </div>
+    </div>
+
+    <script>
+        function showImage(smallImg) {
+            const fullImg = document.getElementById("img-box");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</body>
+</html>
